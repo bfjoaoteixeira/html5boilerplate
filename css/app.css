@@ -1,0 +1,48 @@
+.column{
+  width:50%;
+  float: left;
+}
+.align_right{
+  text-align: right;
+}
+.menu li{
+  display: inline-block;
+}
+
+.header {
+  height: 100px;
+  color:"grey";
+}
+
+.body {
+  height: 400px;
+}
+
+.align_center{
+  text-align: center;
+}
+
+.column4{
+  width:25%;
+  float: left;
+  text-aligh: center;
+  height:150px;
+}
+
+.align_left{
+  text-align: left;
+}
+
+.backgroundimg{
+  background-repeat: no-repeat;
+background-size: contain;
+}
+
+.border{
+  border: 2px solid grey;
+  border-radius: 5px;
+  
+}
+.fundo{
+  background-color:#e6e6e6;
+}
