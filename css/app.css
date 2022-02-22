@@ -13,6 +13,12 @@
   float: left;
 }
 
+.column-ib{
+  width:50%;
+  display: inline-block;
+}
+
+
 .align_right{
   text-align: right;
 }
@@ -48,6 +54,12 @@
   width:25%;
   float: left;
   height:150px;
+}
+
+.column4-ib{
+  width:25%;
+  height: 150px;
+  display: inline-block;
 }
 
 .align_left{
