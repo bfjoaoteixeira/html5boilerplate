@@ -25,50 +25,148 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="column align_center" >
-      <ul class="menu"> 
-        <li class ="border"><a href="#">Home</a></li>
-        <li class ="border"> <a href="#">Objetos</a></li>
-        <li class ="border"> <a href="#">Projetos</a> </li>
+  <!------------top buttons------------>
+  <header class="header" id="top">
+    <div class="menu">
+      <ul class="cluster"> 
+        <li class ="button"><a href="#top">Home</a></li>
+        <li class ="button"> <a href="#conhe">Os meus conhecimentos</a></li>
+        <li class ="button"> <a href="#proj">Projetos</a> </li>
       </ul>
-    </header>
-  </div>
-  </div>
-
-<div class="body">
-    <div class="column">
-      <img src="img/imagem.jpg">
+      <div class="menu">
+        <ul class="cluster">
+          <li class ="button"><a href="#top">A</a></li>
+          <li class ="button"><a href="#top">B</a></li>
+          <li class ="button"><a href="#top">C</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="column fundo">
+  </header>
+  <!------------img e texto------------>
+  <div class="rows">
+    <div class="column ">
+      <img class="roundimg" src="img/imagem.jpg">
+    </div>
+    <div class="column typeletter fundo" style="text-align: center;" >
       <h1>Sou o João, programador de sistemas informáticos</h1>
       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget congue nibh. Curabitur maximus tortor et augue hendrerit bibendum eget ut nulla. Vivamus eget dolor purus. Suspendisse consequat vel nulla nec finibus. Sed dignissim consectetur lectus, vitae sagittis sapien sagittis non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ultricies enim nec augue dictum ultrices. Pellentesque imperdiet magna massa, mollis imperdiet nisl maximus sed. </p>
     </div>
-</div>
-<div>
-  <div>
-  <h2 class="align_center" ><b>Conhecimentos</b></h2>
   </div>
-  <div>
-  <h3 class="align_left" ><b>Linguagens de programação:</b></h2>
-  </div>
-  <div>
-    <div class="column4 backgroundimg" style="background-image: url('img/Csharp_Logo.png');">
+    <div class="rows">
+      <div class="espacov align_center typeletter button fundo">
+    <h2 id="conhe"><b>Conhecimentos</b></h2>
     </div>
   </div>
-  <div class="column4 backgroundimg" style="background-image: url('img/HTML.png');">
+<!------------experiencia de programacao------------>
+  <div class="rows espacov">
+    <h3 class="align_left typeletter subtitulo" ><b>Experiência de programação:</b></h3>
   </div>
-  <div class="column4 backgroundimg" style="background-image: url('img/visual_studio.png');">
-</div>
-<div class="column4 backgroundimg" style="background-image: url('img/SQLServer.png');">
-</div>
-<div>
-  <div class="align_center">
-    <h2><b>Os meus projetos</b></h2>
+  <div class="column typeletter">
+    <img class="backgroundimg" src="img/Csharp_Logo.png" alt="C#">
+    <p>Ligação de C# a SQLServer</p>
   </div>
-  <div>
+  <div class="clumn typeletter">
+    <img class="backgroundimg" src="img/HTML.png" alt="HTML5">
+    <p>Criação de sites
+  </div>
 
+
+
+
+  <!--
+  <div class="column typeletter">
+    <div class=" backgroundimg" style=" background-image: url('img/Csharp_Logo.png');">
+    </div>
+    <div class="backgroundimg" style="background-image: url('img/HTML.png');">
+    </div>
   </div>
+-->
+<!------------formacao academica------------>
+    <div class="typeletter rows espacov">
+      <h3 class=" align_left subtitulo" ><b>Formação académica:</b></h3>
+      <p>Escola secundária da Amadora - Av.Alexandre Salles, Nº9, Amadora, Portugal.</p>
+      <p>Setembro de 2019 - ATUAL</p>
+      <!--<div id="googleMap" style="width:100%;height:400px;"></div>
+      <script>
+        function myMap() {
+          var mapProp= {
+          center:new google.maps.LatLng(38.75504815431165, -9.23128524741223),
+          zoom:5,
+          };
+          var map  = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+      </script>
+
+      <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>-->
+    </div>
+<!------------experiencias profissionais------------>
+    <div class="rows typeletter espacov">
+      <h3 class="align_left subtitulo"><b>Experiências profissionais:</b></h3>
+      <p>Estágio na Baseform</p>
+      <p>21 de fevereiro de 2022 - ATUAL</p>
+      <!--<div id="googleMap" style="width:100%;height:400px;"></div>
+      <script>
+        function myMap() {
+          var mapProp= {
+          center:new google.maps.LatLng(38.71209481277845, -9.156665543136834),
+          zoom:5,
+          };
+          var map  = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+      </script>
+
+      <script src="https://maps.googleapis.com/maps/api/js?key=www.embedgooglemap.net&callback=myMap"></script>-->
+    </div>
+<!------------API´s------------>
+<div class="rows typeletter espacov">
+      <h3 class="align_left subtitulo"><b>API´s</b></h3>
+      <p>Google maps</p>
+      <p>HTML5 boiler plate</p>
+      <p>jQuery</p>
+      <p>Apache cayenne</p>
+      <p>Apache commons</p>
+    </div>
+
+<!------------Projetos------------>
+<h3 class="align_left subtitulo" id="proj"><b>Projetos desenvolvidos:</b></h3>
+<div class="column typeletter ">
+    <p> Site de gestão de Stock em C# e ligado a uma base de dados (SQL Server)</p>
+    <p> 26 de janeiro de 2022 - 18 de fevereiro de 2022</p>
+</div>
+<div class="typeletter column">
+  <p>Site online de venda e compra de artigos publico, projeto de fim de curso (PAP)</p>
+  <p>12 de janeiro de 2022 - EM PROGRESSO - Data maxima 7 de julho de 2022</p>
+</div>
+
+
+<!--  Conhecimentos linguisticos -->
+<h3 class="align_left subtitulo" id="linguis"><b>Conhecimentos linguísticos:</b></h3>
+<div class="rows">
+<div class="column typeletter ">
+  <p>Português</p>
+</div>
+<div class="column typeletter">
+  <p>Inglês</p>
+</div>
+</div>
+
+
+
+<!--<div>
+  <div class="typeletter rows espacov column">
+    <h3 class="align_left subtitulo" id="proj"><b>Projetos desenvolvidos:</b></h3>
+    <p> Site de gestão de Stock em C# e ligado a uma base de dados (SQL Server)</p>
+    <p> 26 de janeiro de 2022 - 18 de fevereiro de 2022</p>
+  </div>
+  <div class="typeletter rows espacev column">
+    <p>Site online de venda e compra de artigos publico, projeto de fim de curso (PAP)</p>
+    <p>12 de janeiro de 2022 - EM PROGRESSO - Data maxima 7 de julho de 2022</p>
+</div>
+-->
+
+
+<div class="typeletter espacov">
+  <a class="button fundo aligh_center" href="#top" >Voltar ao inicio </a>
 </div>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>

@@ -1,21 +1,43 @@
-.column{
-  width:50%;
-  float: left;
-}
-.align_right{
-  text-align: right;
-}
-.menu li{
-  display: inline-block;
-}
-
-.header {
-  height: 100px;
-  color:"grey";
+@font-face {
+  font-family: "principal";
+  src:  url('/font/Meiland Gorgeous.ttf');
 }
 
 .body {
   height: 400px;
+  
+}
+
+.column{
+  width:50%;
+  float: left;
+}
+
+.align_right{
+  text-align: right;
+}
+.header .cluster{
+  line-height: 1.5;
+  font-family: principal;
+ background-color: #b3b3b3;
+ text-align: center;
+}
+
+.header {
+  height: 100px;
+  margin-bottom: 5px;
+}
+
+.header .menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+.header > .menu > .menu .button{
+  padding: 0px 15px;
+}
+.header > .menu > .menu ul{
+  margin-top: 0;
 }
 
 .align_center{
@@ -25,7 +47,6 @@
 .column4{
   width:25%;
   float: left;
-  text-aligh: center;
   height:150px;
 }
 
@@ -34,15 +55,49 @@
 }
 
 .backgroundimg{
-  background-repeat: no-repeat;
-background-size: contain;
+background-repeat: no-repeat;
+float:  left;
+height: 150px;
+width: 150px;
 }
 
-.border{
-  border: 2px solid grey;
-  border-radius: 5px;
-  
+.button{
+  background-color: #f0f0f5;
+  border-bottom-color: 10px #666699;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.button{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+}
+
+.espacov{
+  margin-top: 60px;
+}
+.typeletter{
+  line-height: 1.5;
+  font-family: principal;
+}
+
+.subtitulo{
+  background-color:#e6e6e6
+}
+
+.roundimg{
+  border-style: solid groove;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .fundo{
-  background-color:#e6e6e6;
+  background-color: #b3b3b3;
+}
+.rows{
+  display:  inline-block;
+  width:  100%;
 }
