@@ -11,7 +11,7 @@
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
-
+  <script src="js/jquery-3.6.0.min.js"></script>
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -35,17 +35,25 @@
       </ul>
       <div class="menu">
         <ul class="cluster">
-          <li class ="button"><a href="#top">A</a></li>
-          <li class ="button"><a href="#top">B</a></li>
-          <li class ="button"><a href="#top">C</a></li>
+          <li class ="button"><a href="#expprog">Experiência de programação</a></li>
+          <li class ="button"><a href="#form">Formação acadêmica</a></li>
+          <li class ="button"><a href="#expprof">Corriculo Profissional</a></li>
+          <li class ="button"><a href="#api">Api's</a></li>
+          <li class ="button"><a href="#proj">Projetos</a></li>
+          <li class ="button"><a href="#linguis">Conhecimeno de linguas</a></li>
+          <li class ="button"><a href="#lazer">Atividades de lazer</a></li>
         </ul>
       </div>
     </div>
   </header>
+
+
+
+
   <!------------img e texto------------>
   <div class="rows">
     <div class="column ">
-      <img class="roundimg" src="img/imagem.jpg">
+      <img class="roundimg" src="img/imagem.jpg" alt="minha foto">
     </div>
     <div class="column typeletter fundo" style="text-align: center;" >
       <h1>Sou o João, programador de sistemas informáticos</h1>
@@ -53,13 +61,17 @@
     </div>
   </div>
     <div class="rows">
-      <div class="espacov align_center typeletter button fundo">
-    <h2 id="conhe"><b>Conhecimentos</b></h2>
+      <div class="espacov align_center typeletter fundo">
+    <h2 id="conhe">Conhecimentos</h2>
     </div>
   </div>
+
+
+
+
 <!------------experiencia de programacao------------>
-  <div class="rows espacov">
-    <h3 class="align_left typeletter subtitulo" ><b>Experiência de programação:</b></h3>
+  <div class="rows espacov" id="expprog">
+    <h3 class="align_left typeletter subtitulo" >Experiência de programação:</h3>
   </div>
   <div class="column typeletter">
     <img class="backgroundimg" src="img/Csharp_Logo.png" alt="C#">
@@ -73,53 +85,33 @@
 
 
 
-  <!--
-  <div class="column typeletter">
-    <div class=" backgroundimg" style=" background-image: url('img/Csharp_Logo.png');">
-    </div>
-    <div class="backgroundimg" style="background-image: url('img/HTML.png');">
-    </div>
-  </div>
--->
 <!------------formacao academica------------>
-    <div class="typeletter rows espacov">
-      <h3 class=" align_left subtitulo" ><b>Formação académica:</b></h3>
+    <div class="typeletter rows espacov" id="form">
+     <h3 class=" align_left subtitulo" >Formação académica:</h3>
       <p>Escola secundária da Amadora - Av.Alexandre Salles, Nº9, Amadora, Portugal.</p>
       <p>Setembro de 2019 - ATUAL</p>
-      <!--<div id="googleMap" style="width:100%;height:400px;"></div>
-      <script>
-        function myMap() {
-          var mapProp= {
-          center:new google.maps.LatLng(38.75504815431165, -9.23128524741223),
-          zoom:5,
-          };
-          var map  = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-        }
-      </script>
-
-      <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>-->
     </div>
+      <div class="mapouter" data-location="escola secundaria da amadora"></div>
+    
+
+
+    
 <!------------experiencias profissionais------------>
-    <div class="rows typeletter espacov">
-      <h3 class="align_left subtitulo"><b>Experiências profissionais:</b></h3>
+    <div class="rows typeletter espacov" id="expprof">
+      <h3 class="align_left subtitulo">Experiências profissionais:</h3>
       <p>Estágio na Baseform</p>
       <p>21 de fevereiro de 2022 - ATUAL</p>
-      <!--<div id="googleMap" style="width:100%;height:400px;"></div>
-      <script>
-        function myMap() {
-          var mapProp= {
-          center:new google.maps.LatLng(38.71209481277845, -9.156665543136834),
-          zoom:5,
-          };
-          var map  = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-        }
-      </script>
+      <div class="mapouter" data-location="baseform"></div>
 
-      <script src="https://maps.googleapis.com/maps/api/js?key=www.embedgooglemap.net&callback=myMap"></script>-->
+  
     </div>
+
+
+
+
 <!------------API´s------------>
-<div class="rows typeletter espacov">
-      <h3 class="align_left subtitulo"><b>API´s</b></h3>
+<div class="rows typeletter espacov" id="api">
+      <h3 class="align_left subtitulo">API´s:</h3>
       <p>Google maps</p>
       <p>HTML5 boiler plate</p>
       <p>jQuery</p>
@@ -127,39 +119,57 @@
       <p>Apache commons</p>
     </div>
 
-<!------------Projetos------------>
-<h3 class="align_left subtitulo" id="proj"><b>Projetos desenvolvidos:</b></h3>
-<div class="column-ib typeletter ">
-    <p> Site de gestão de Stock em C# e ligado a uma base de dados (SQL Server)</p>
-    <p> 26 de janeiro de 2022 - 18 de fevereiro de 2022</p>
-</div><!----><div class="typeletter column-ib">
-  <p>Site online de venda e compra de artigos publico, projeto de fim de curso (PAP)</p>
-  <p>12 de janeiro de 2022 - EM PROGRESSO - Data maxima 7 de julho de 2022</p>
-</div>
 
+
+
+<!------------Projetos------------>
+<h3 class="align_left subtitulo" id="proj">Projetos desenvolvidos:</h3>
+<div class=" rows" style="display: flex;">
+  <div class="column-ib typeletter">
+    <p> Site de gestão de Stock em C# e ligado a uma base de dados (SQL Server)</p>
+    <p> 26 de janeiro de 2022 - 18 de fevereiro de 2022</p><!--
+  --></div>
+  <div class="column-ib typeletter ">
+   <p>Site online de venda e compra de artigos publico, projeto de fim de curso (PAP)</p>    
+   <p>12 de janeiro de 2022 - EM PROGRESSO - Data maxima 7 de julho de 2022</p><!--
+  --></div>
+</div>
 
 <!--  Conhecimentos linguisticos -->
-<h3 class="align_left subtitulo" id="linguis"><b>Conhecimentos linguísticos:</b></h3>
-<div class="column-ib typeletter ">
+<h3 class="align_left subtitulo" id="linguis">Conhecimentos linguísticos:</h3>
+<div class="rows">
+<div class="column typeletter ">
   <p>Português</p>
-</div><!--
---><div class="column-ib typeletter">
+</div>
+<div class="column typeletter">
   <p>Inglês</p>
 </div>
-
-
-
-<!--<div>
-  <div class="typeletter rows espacov column">
-    <h3 class="align_left subtitulo" id="proj"><b>Projetos desenvolvidos:</b></h3>
-    <p> Site de gestão de Stock em C# e ligado a uma base de dados (SQL Server)</p>
-    <p> 26 de janeiro de 2022 - 18 de fevereiro de 2022</p>
-  </div>
-  <div class="typeletter rows espacev column">
-    <p>Site online de venda e compra de artigos publico, projeto de fim de curso (PAP)</p>
-    <p>12 de janeiro de 2022 - EM PROGRESSO - Data maxima 7 de julho de 2022</p>
 </div>
--->
+
+<!-- Atividades lazer -->
+<h3 class="align_left subtitulo" id="lazer">Atividades de lazer:</h3>
+<div class=" rows">
+    <div class="column-ib typeletter">
+        <p>Montagem e desmontagem de computadores</p>
+    </div><!--
+    --><div class="column typeletter">
+        <p>Conduzir</p>
+    </div>
+</div>
+<div class="espacov align_center">
+<form action="">
+  <label for="nome">Seu nome:</label>
+  <input size="28" type="text" id="nome"name="frame">
+  <br><br>
+  <label for="desc">Mensagem:</label>
+  <textarea size=" 100" id="desc" name="desc"></textarea>
+  <br><br>
+  <input type="submit" value="Enviar">
+</form>
+<div class="msg_user">
+
+</div>
+</div>
 
 
 <div class="typeletter espacov">
@@ -169,6 +179,39 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-</body>
 
+</body>
+<script>
+
+let lista =[];
+$(function(){
+  let mapHolders = $(".mapouter");
+  for (var i = 0; i<mapHolders.length; i++) {
+     $(mapHolders[i]).load("fragment/map.html", function(data){
+      let holder = $(this);
+      holder.find("iframe").prop("src", "https://maps.google.com/maps?q=" + this.dataset.location + "&t=&z=15&ie=UTF8&iwloc=&output=embed");
+    });
+  }
+
+
+  $("form").on("submit",function(e){
+    //console.log("ola")
+    e.preventDefault();
+    let n;
+    n = $("input").val()
+    //window.alert(n);
+    let m;
+    m = $("textarea").val()
+    //window.alert(m);
+    localStorage.setItem(n, m);
+    let dds = [n,m];
+    console.log(dds.length);
+    lista.push(dds);
+    localStorage.setItem('respostas', JSON.stringify(lista));
+    console.log(lista)
+    $(".msg_user").html("<p> obg pela mensagem "+ n + "</p>");
+
+  })
+})
+ </script> 
 </html>
