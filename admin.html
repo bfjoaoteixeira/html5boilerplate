@@ -25,8 +25,9 @@
 		<table>
 				<thead>
 					<tr> 	
-					 <th> nome </th>	
-					 <th> mensagem </th>	
+					 <th> Nome </th>	
+					 <th> Mensagem </th>
+           <th> Detalhes</th>	
 					</tr>
 				</thead>
 				<tbody class="tbody">	
@@ -43,8 +44,9 @@
   $(".tbody").append("<tr>" + 
     "<td>" + linha[0] + "</td>"+
     "<td>" + linha[1] + "</td>"+
+    "<td>" + "<input type="button" onClick="delete(linha[0],linha[1])" value="Apagar">" + "</td>" +
     "</tr>");
-} 
+}
 </script>
 
 

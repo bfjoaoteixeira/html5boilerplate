@@ -29,16 +29,20 @@
   <header class="header" id="top">
     <div class="menu">
       <ul class="cluster"> 
-        <li class ="button"><a href="#top">Home</a></li>
-        <li class ="button"> <a href="#conhe">Os meus conhecimentos</a></li>
-        <li class ="button"> <a href="#proj">Projetos</a> </li>
+        <li class ="button" id="main"><a HREF="javascript:history.go(http://localhost:8080)">Home</a></li>
+        <li class ="button" id="osconhe">Os meus conhecimentos</a></li>
+        <li class ="button" id="projs">Projetos</li>
       </ul>
-      <div class="menu">
+      <div class="menu" id="mconhe" style="display:none">
         <ul class="cluster">
           <li class ="button"><a href="#expprog">Experiência de programação</a></li>
           <li class ="button"><a href="#form">Formação acadêmica</a></li>
           <li class ="button"><a href="#expprof">Corriculo Profissional</a></li>
           <li class ="button"><a href="#api">Api's</a></li>
+        </ul>
+      </div>
+      <div class="menu" id="mproj" style="display:none">
+        <ul class="cluster">
           <li class ="button"><a href="#proj">Projetos</a></li>
           <li class ="button"><a href="#linguis">Conhecimeno de linguas</a></li>
           <li class ="button"><a href="#lazer">Atividades de lazer</a></li>
@@ -47,12 +51,11 @@
     </div>
   </header>
 
-
-
+<!--   -->
 
   <!------------img e texto------------>
-  <div class="rows">
-    <div class="column ">
+  <div class="rows" style="display:flex">
+    <div class="column" style="padding-top: 50px;">
       <img class="roundimg" src="img/imagem.jpg" alt="minha foto">
     </div>
     <div class="column typeletter fundo" style="text-align: center;" >
@@ -60,8 +63,8 @@
       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget congue nibh. Curabitur maximus tortor et augue hendrerit bibendum eget ut nulla. Vivamus eget dolor purus. Suspendisse consequat vel nulla nec finibus. Sed dignissim consectetur lectus, vitae sagittis sapien sagittis non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ultricies enim nec augue dictum ultrices. Pellentesque imperdiet magna massa, mollis imperdiet nisl maximus sed. </p>
     </div>
   </div>
-    <div class="rows">
-      <div class="espacov align_center typeletter fundo">
+    <div class="rows espacov">
+      <div class=" align_center typeletter fundo">
     <h2 id="conhe">Conhecimentos</h2>
     </div>
   </div>
@@ -70,8 +73,8 @@
 
 
 <!------------experiencia de programacao------------>
-  <div class="rows espacov" id="expprog">
-    <h3 class="align_left typeletter subtitulo" >Experiência de programação:</h3>
+  <div class="rows subtitulo espacov" id="expprog">
+    <h3 class="typeletter margins" >Experiência de programação:</h3>
   </div>
   <div class="column typeletter">
     <img class="backgroundimg" src="img/Csharp_Logo.png" alt="C#">
@@ -87,9 +90,13 @@
 
 <!------------formacao academica------------>
     <div class="typeletter rows espacov" id="form">
-     <h3 class=" align_left subtitulo" >Formação académica:</h3>
+      <div class=" subtitulo">
+        <h3 class=" align_left margins" >Formação académica:</h3>
+      </div>
+      <div class="margins">
       <p>Escola secundária da Amadora - Av.Alexandre Salles, Nº9, Amadora, Portugal.</p>
       <p>Setembro de 2019 - ATUAL</p>
+    </div>
     </div>
       <div class="mapouter" data-location="escola secundaria da amadora"></div>
     
@@ -98,10 +105,14 @@
     
 <!------------experiencias profissionais------------>
     <div class="rows typeletter espacov" id="expprof">
-      <h3 class="align_left subtitulo">Experiências profissionais:</h3>
+      <div class="subtitulo">
+      <h3 class="align_left margins">Experiências profissionais:</h3>
+    </div>
+    <div class="margins">
       <p>Estágio na Baseform</p>
       <p>21 de fevereiro de 2022 - ATUAL</p>
       <div class="mapouter" data-location="baseform"></div>
+    </div>
 
   
     </div>
@@ -111,51 +122,75 @@
 
 <!------------API´s------------>
 <div class="rows typeletter espacov" id="api">
-      <h3 class="align_left subtitulo">API´s:</h3>
+    <div class="subtitulo">
+      <h3 class="align_left margins">API´s:</h3>
+    </div>
+    <div class="margins">
       <p>Google maps</p>
       <p>HTML5 boiler plate</p>
       <p>jQuery</p>
       <p>Apache cayenne</p>
       <p>Apache commons</p>
     </div>
+</div>
 
 
 
 
 <!------------Projetos------------>
-<h3 class="align_left subtitulo" id="proj">Projetos desenvolvidos:</h3>
-<div class=" rows" style="display: flex;">
-  <div class="column-ib typeletter">
+<div class="subtitulo">
+  <h3 class="align_left margins" id="proj">Projetos desenvolvidos:</h3>
+</div>
+<div class="rows" style="display: flex;">
+  <div class="column-ib typeletter margins">
     <p> Site de gestão de Stock em C# e ligado a uma base de dados (SQL Server)</p>
     <p> 26 de janeiro de 2022 - 18 de fevereiro de 2022</p><!--
   --></div>
-  <div class="column-ib typeletter ">
+  <div class="column-ib typeletter margins">
    <p>Site online de venda e compra de artigos publico, projeto de fim de curso (PAP)</p>    
    <p>12 de janeiro de 2022 - EM PROGRESSO - Data maxima 7 de julho de 2022</p><!--
   --></div>
 </div>
 
 <!--  Conhecimentos linguisticos -->
-<h3 class="align_left subtitulo" id="linguis">Conhecimentos linguísticos:</h3>
-<div class="rows">
-<div class="column typeletter ">
-  <p>Português</p>
+<div class="subtitulo">
+  <h3 class="align_left margins" id="linguis">Conhecimentos linguísticos:</h3>
 </div>
-<div class="column typeletter">
-  <p>Inglês</p>
-</div>
+<div class="rows "style="display: flex;">
+  <div class="column-ib typeletter margins">
+    <p>Português</p>
+  </div><!--
+  --><div class="column-ib typeletter margins">
+    <p>Inglês</p><!--
+  --></div>
 </div>
 
 <!-- Atividades lazer -->
-<h3 class="align_left subtitulo" id="lazer">Atividades de lazer:</h3>
-<div class=" rows">
-    <div class="column-ib typeletter">
+<div class=" subtitulo">
+  <h3 class="align_left margins" id="lazer">Atividades de lazer:</h3>
+</div>
+<div class=" rows"style="display: flex;">
+    <div class="column-ib typeletter margins">
         <p>Montagem e desmontagem de computadores</p>
     </div><!--
-    --><div class="column typeletter">
+    --><div class="column typeletter margins">
         <p>Conduzir</p>
     </div>
 </div>
+
+<!-- contactos -->
+<div class="rows espacov" style="display:flex;">
+  <div class="column-ib typeletter align_left"style="margin-right: 130px;margin-left:40px; " >
+    <h4 class="subtitulo">Contactos</h4>
+    <p> Mail: joao.p.teixeira@outlook.com</p>
+    <p> Tel: 930559924</p>
+  </div>
+  <div class="column-ib typeletter"style="margin-right: 100px;">
+    <h4 class="subtitulo">Como contactar</h4>
+    <p>Mande um mail, ligue para o numero do meu agente ou envie uma mensagem em baixo.</p>
+  </div>
+</div>
+
 <div class="espacov align_center">
 <form action="">
   <label for="nome">Seu nome:</label>
@@ -209,9 +244,51 @@ $(function(){
     lista.push(dds);
     localStorage.setItem('respostas', JSON.stringify(lista));
     console.log(lista)
-    $(".msg_user").html("<p> obg pela mensagem "+ n + "</p>");
+    $(".msg_user").html("<p> Obrigado pela mensagem "+ n + "</p>");
 
   })
+
+
+  let menu = $( "#osconhe" );
+  menu.click(function() {
+
+    if (menu.hasClass("mostra")){
+      $("#mconhe").slideUp(10);
+      menu.removeClass("mostra");
+    }else{
+      menu_proj.removeClass("mostra");
+      $("#mproj").slideUp(10);
+      $("#mconhe").fadeIn(700,function(){
+      menu.addClass("mostra");
+      
+      });
+    }
+    });
+
+
+
+  let menu_proj = $("#projs");
+  menu_proj.click(function(){
+
+    if(menu_proj.hasClass("mostra")){
+      $("#mproj").slideUp(10);
+      menu_proj.removeClass("mostra");
+    }else{
+      menu.removeClass("mostra");
+      $("#mconhe").slideUp(10);
+      $("#mproj").fadeIn(700,function(){
+      menu_proj.addClass("mostra");
+        
+      })
+    }
+  })
+
+
+
+
+    
+  
 })
+
  </script> 
 </html>
