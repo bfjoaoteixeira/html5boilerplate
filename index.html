@@ -25,27 +25,28 @@
 </head>
 
 <body>
+  <div class="root">
   <!------------top buttons------------>
   <header class="header" id="top">
     <div class="menu">
       <ul class="cluster"> 
-        <li class ="button" id="main"><a HREF="javascript:history.go(http://localhost:8080)">Home</a></li>
-        <li class ="button" id="osconhe">Os meus conhecimentos</a></li>
+        <li class ="button" id="main" data-link="#top">Home</li>
+        <li class ="button" id="osconhe">Os meus conhecimentos</li>
         <li class ="button" id="projs">Projetos</li>
       </ul>
-      <div class="menu" id="mconhe" style="display:none">
-        <ul class="cluster">
-          <li class ="button"><a href="#expprog">Experiência de programação</a></li>
-          <li class ="button"><a href="#form">Formação acadêmica</a></li>
-          <li class ="button"><a href="#expprof">Corriculo Profissional</a></li>
-          <li class ="button"><a href="#api">Api's</a></li>
+      <div class="menu" id="mconhe" style="display:none;">
+        <ul class="cluster subb">
+          <li class ="button" id="mexpprog" data-link="#expprog">Experiência de programação</li>
+          <li class ="button" id="mfrom" data-link="#form">Formação acadêmica</li>
+          <li class ="button" id="mexpprof" data-link="#expprof">Corriculo Profissional</a></li>
+          <li class ="button" id="mapi" data-link="#api">Api's</li>
         </ul>
       </div>
-      <div class="menu" id="mproj" style="display:none">
+      <div class="menu" id="mprojs" style="display:none;">
         <ul class="cluster">
-          <li class ="button"><a href="#proj">Projetos</a></li>
-          <li class ="button"><a href="#linguis">Conhecimeno de linguas</a></li>
-          <li class ="button"><a href="#lazer">Atividades de lazer</a></li>
+          <li class ="button"id="mproj" data-link="#proj">Projetos</li>
+          <li class ="button" id="mlinguas" data-link="#linguas">Conhecimeno de linguas</a></li>
+          <li class ="button" id="mlazer" data-link="#lazer">Atividades de lazer</li>
         </ul>
       </div>
     </div>
@@ -54,66 +55,73 @@
 <!--   -->
 
   <!------------img e texto------------>
-  <div class="rows" style="display:flex">
-    <div class="column" style="padding-top: 50px;">
-      <img class="roundimg" src="img/imagem.jpg" alt="minha foto">
+  <div class="divisao">
+    <div class="column">
+      <img class="roundimg" src="img/imagem.jpg" alt="Este sou eu">
     </div>
-    <div class="column typeletter fundo" style="text-align: center;" >
-      <h1>Sou o João, programador de sistemas informáticos</h1>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget congue nibh. Curabitur maximus tortor et augue hendrerit bibendum eget ut nulla. Vivamus eget dolor purus. Suspendisse consequat vel nulla nec finibus. Sed dignissim consectetur lectus, vitae sagittis sapien sagittis non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ultricies enim nec augue dictum ultrices. Pellentesque imperdiet magna massa, mollis imperdiet nisl maximus sed. </p>
-    </div>
-  </div>
-    <div class="rows espacov">
-      <div class=" align_center typeletter fundo">
-    <h2 id="conhe">Conhecimentos</h2>
+    <div class="column flexcolumn align_justify">
+      <h1>Sou o João, programador de sistemas informáticos e criador de sites ótimos</h1>
+     <div id="expprog"></div><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget congue nibh. Curabitur maximus tortor et augue hendrerit bibendum eget ut nulla. Vivamus eget dolor purus. Suspendisse consequat vel nulla nec finibus. Sed dignissim  consectetur lectus, vitae sagittis sapien sagittis non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ultricies enim nec augue dictum ultrices. Pellentesque imperdiet magna massa, mollis imperdiet nisl maximus sed. </p>
     </div>
   </div>
-
-
-
-
-<!------------experiencia de programacao------------>
-  <div class="rows subtitulo espacov" id="expprog">
-    <h3 class="typeletter margins" >Experiência de programação:</h3>
+  <div class="espacov">
+    <div class=" align_center fundo">
+      <h2 id="conhe">Conhecimentos</h2>
+    </div>
   </div>
-  <div class="column typeletter">
-    <img class="backgroundimg" src="img/Csharp_Logo.png" alt="C#">
-    <p>Ligação de C# a SQLServer</p>
+
+  <!------------experiencia de programacao------------>
+  <div class="subtitulo espacov" >
+    <h3 class="margins align_left" >Experiência de programação:</h3>
   </div>
-  <div class="clumn typeletter">
-    <img class="backgroundimg" src="img/HTML.png" alt="HTML5">
-    <p>Criação de sites
+  <div class="divisao">
+    <div class="column align_left">
+      <img class="backgroundimg" src="img/Csharp_Logo.png" alt="C#">
+      <p>Ligação de C# a SQLServer</p>
+    </div>
+    <div class="column align_left">
+      <img class="backgroundimg" src="img/HTML.png" alt="HTML5">
+      <div id="form"></div>
+      <p>Criação de sites</p>
+    </div>
   </div>
 
 
 
 
 <!------------formacao academica------------>
-    <div class="typeletter rows espacov" id="form">
+    <div class="espacov" >
       <div class=" subtitulo">
         <h3 class=" align_left margins" >Formação académica:</h3>
       </div>
-      <div class="margins">
+      <div class="margins align_left">
       <p>Escola secundária da Amadora - Av.Alexandre Salles, Nº9, Amadora, Portugal.</p>
       <p>Setembro de 2019 - ATUAL</p>
     </div>
+    <div>
+      <div id="expprof"></div>
+    </div>
     </div>
       <div class="mapouter" data-location="escola secundaria da amadora"></div>
+
     
 
 
     
 <!------------experiencias profissionais------------>
-    <div class="rows typeletter espacov" id="expprof">
+    <div class="espacov" >
       <div class="subtitulo">
       <h3 class="align_left margins">Experiências profissionais:</h3>
     </div>
-    <div class="margins">
+    <div class="margins align_left">
       <p>Estágio na Baseform</p>
       <p>21 de fevereiro de 2022 - ATUAL</p>
+      <div>
+      <div id="api"></div>
+    </div>
       <div class="mapouter" data-location="baseform"></div>
     </div>
-
+    
   
     </div>
 
@@ -121,14 +129,14 @@
 
 
 <!------------API´s------------>
-<div class="rows typeletter espacov" id="api">
+<div class="espacov" >
     <div class="subtitulo">
       <h3 class="align_left margins">API´s:</h3>
     </div>
-    <div class="margins">
+    <div class="margins align_left">
       <p>Google maps</p>
       <p>HTML5 boiler plate</p>
-      <p>jQuery</p>
+      <p>jQuery</p><div id="proj"></div>
       <p>Apache cayenne</p>
       <p>Apache commons</p>
     </div>
@@ -138,83 +146,109 @@
 
 
 <!------------Projetos------------>
-<div class="subtitulo">
-  <h3 class="align_left margins" id="proj">Projetos desenvolvidos:</h3>
+<div class="subtitulo espacov">
+  <h3 class="align_left margins" >Projetos desenvolvidos:</h3>
 </div>
-<div class="rows" style="display: flex;">
-  <div class="column-ib typeletter margins">
-    <p> Site de gestão de Stock em C# e ligado a uma base de dados (SQL Server)</p>
-    <p> 26 de janeiro de 2022 - 18 de fevereiro de 2022</p><!--
-  --></div>
-  <div class="column-ib typeletter margins">
-   <p>Site online de venda e compra de artigos publico, projeto de fim de curso (PAP)</p>    
-   <p>12 de janeiro de 2022 - EM PROGRESSO - Data maxima 7 de julho de 2022</p><!--
+<div class="divisao">
+  <div class="column margins align_left">
+    <p> Site de gestão de Stock em C# e ligado a uma base de dados (SQL Server)<br>26 de janeiro de 2022 - 18 de fevereiro de 2022</p><!--
+
+  --></div><div id="linguas"></div>
+  <div class="column margins align_left">
+   <p>Site online de venda e compra de artigos publico, projeto de fim de curso (PAP) <br>12 de janeiro de 2022 - EM PROGRESSO - Data maxima 7 de julho de 2022</p><!--
   --></div>
 </div>
 
+
+
 <!--  Conhecimentos linguisticos -->
-<div class="subtitulo">
-  <h3 class="align_left margins" id="linguis">Conhecimentos linguísticos:</h3>
+<div class="subtitulo espacov">
+  <div id="lazer"></div>
+  <h3 class="align_left margins" >Conhecimentos linguísticos:</h3>
 </div>
-<div class="rows "style="display: flex;">
-  <div class="column-ib typeletter margins">
+<div class="divisao">
+  <div class="column margins align_left">
     <p>Português</p>
   </div><!--
-  --><div class="column-ib typeletter margins">
+  --><div class="column margins align_left">
     <p>Inglês</p><!--
   --></div>
 </div>
 
+
+
+
 <!-- Atividades lazer -->
-<div class=" subtitulo">
-  <h3 class="align_left margins" id="lazer">Atividades de lazer:</h3>
+<div class=" subtitulo espacov">
+  <h3 class="align_left margins" >Atividades de lazer:</h3>
 </div>
-<div class=" rows"style="display: flex;">
-    <div class="column-ib typeletter margins">
+<div class=" divisao">
+    <div class="column margins align_left">
         <p>Montagem e desmontagem de computadores</p>
     </div><!--
-    --><div class="column typeletter margins">
+    --><div class="column margins align_left">
         <p>Conduzir</p>
     </div>
 </div>
 
 <!-- contactos -->
-<div class="rows espacov" style="display:flex;">
-  <div class="column-ib typeletter align_left"style="margin-right: 130px;margin-left:40px; " >
-    <h4 class="subtitulo">Contactos</h4>
-    <p> Mail: joao.p.teixeira@outlook.com</p>
-    <p> Tel: 930559924</p>
+  <div class="espacov subtitulo">
+    <h4 class="subtitulo margins" >Contactos</h4>
   </div>
-  <div class="column-ib typeletter"style="margin-right: 100px;">
-    <h4 class="subtitulo">Como contactar</h4>
-    <p>Mande um mail, ligue para o numero do meu agente ou envie uma mensagem em baixo.</p>
+  <div class="divisao">
+    <div class="column margins align_left">
+      <p> Mail: joao.p.teixeira@outlook.com <br> Tel: 930559924</p>
+    </div>
+    <div class="column margins align_left"style="margin-right: 40px;">
+      <p style="margin-left: 40px">Mande um mail, ligue para o numero do meu agente ou envie uma mensagem em baixo.</p>
+    </div>
   </div>
-</div>
 
-<div class="espacov align_center">
-<form action="">
-  <label for="nome">Seu nome:</label>
-  <input size="28" type="text" id="nome"name="frame">
-  <br><br>
-  <label for="desc">Mensagem:</label>
-  <textarea size=" 100" id="desc" name="desc"></textarea>
-  <br><br>
-  <input type="submit" value="Enviar">
-</form>
+
+<!--      caixa de msg      -->
+<div class="espacov">
+  <div class="align_center">
+    <form action="">
+      <label for="nome">Seu nome:</label>
+      <input size="28" type="text" id="nome"name="frame">
+      <br><br>
+      <label for="desc">Mensagem:</label>
+      <textarea size=" 100" id="desc" name="desc"></textarea>
+      <br><br>
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
 <div class="msg_user">
 
 </div>
 </div>
 
-
+<!-- btn voltar inicio -->
 <div class="typeletter espacov">
   <a class="button fundo aligh_center" href="#top" >Voltar ao inicio </a>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
+</div>
 </body>
 <script>
 
@@ -257,7 +291,7 @@ $(function(){
       menu.removeClass("mostra");
     }else{
       menu_proj.removeClass("mostra");
-      $("#mproj").slideUp(10);
+      $("#mprojs").slideUp(10);
       $("#mconhe").fadeIn(700,function(){
       menu.addClass("mostra");
       
@@ -271,21 +305,49 @@ $(function(){
   menu_proj.click(function(){
 
     if(menu_proj.hasClass("mostra")){
-      $("#mproj").slideUp(10);
+      $("#mprojs").slideUp(10);
       menu_proj.removeClass("mostra");
     }else{
       menu.removeClass("mostra");
       $("#mconhe").slideUp(10);
-      $("#mproj").fadeIn(700,function(){
+      $("#mprojs").fadeIn(700,function(){
       menu_proj.addClass("mostra");
         
       })
     }
   })
 
+  $("#main").click(function(){
+    window.location=$(this).data("link");
+  })
 
+  $("#mexpprog").click(function(){
+    window.location=$(this).data("link");
+  })
 
+  $("#mfrom").click(function(){
+    window.location=$(this).data("link");
+  })
 
+  $("#mexpprof").click(function(){
+    window.location=$(this).data("link");
+  })
+
+  $("#mapi").click(function(){
+    window.location=$(this).data("link");
+  })
+
+  $("#mproj").click(function(){
+    window.location=$(this).data("link");
+  })  
+
+  $("#mlinguas").click(function(){
+    window.location=$(this).data("link");
+  })  
+
+  $("#mlazer").click(function(){
+    window.location=$(this).data("link");
+  })  
     
   
 })

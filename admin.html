@@ -35,8 +35,9 @@
 				</tbody>
 		</table>
 <script>
+
   var respostas = JSON.parse(localStorage["respostas"]);
-  console.log(respostas);
+
 
   for (let i = 0; i < respostas.length; i++) { // [ [a,b], [c,b], [d,b] ]
    let linha = respostas[i] // [a,b]
@@ -44,13 +45,29 @@
   $(".tbody").append("<tr>" + 
     "<td>" + linha[0] + "</td>"+
     "<td>" + linha[1] + "</td>"+
-    "<td>" + "<input type="button" onClick="delete(linha[0],linha[1])" value="Apagar">" + "</td>" +
+    "<td>" + '<input type="button" onClick="delete1('+i+')" value="Apagar">' + "</td>" +
     "</tr>");
 }
+
+
+function delete1(param){
+  let linha2= respostas[param];
+  let text = "Deseja apagar a linha " + linha2 + " ?";
+  if (confirm(text) == true) {
+    var templocal = JSON.parse(localStorage["respostas"]);
+    templocal.splice(param,1);
+    localStorage.setItem('respostas', JSON.stringify(templocal));
+    location.reload();
+  }
+  
+}
+
+
+
 </script>
 
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
 	<script src="js/vendor/modernizr-3.11.2.min.js"></script>
   	<script src="js/plugins.js"></script>
   	<script src="js/main.js"></script>
