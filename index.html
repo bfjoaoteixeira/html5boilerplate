@@ -33,6 +33,7 @@
         <li class ="button" id="main" data-link="#top">Home</li>
         <li class ="button" id="osconhe">Os meus conhecimentos</li>
         <li class ="button" id="projs">Projetos</li>
+        <li class ="button" id="mlazer" data-link="#lazer">Atividades de lazer</li>
       </ul>
       <div class="menu" id="mconhe" style="display:none;">
         <ul class="cluster subb">
@@ -40,13 +41,12 @@
           <li class ="button" id="mfrom" data-link="#form">Formação acadêmica</li>
           <li class ="button" id="mexpprof" data-link="#expprof">Corriculo Profissional</a></li>
           <li class ="button" id="mapi" data-link="#api">Api's</li>
+          <li class ="button" id="mlinguas" data-link="#linguas">Conhecimeno de linguas</a></li>
         </ul>
       </div>
       <div class="menu" id="mprojs" style="display:none;">
         <ul class="cluster">
-          <li class ="button"id="mproj" data-link="#proj">Projetos</li>
-          <li class ="button" id="mlinguas" data-link="#linguas">Conhecimeno de linguas</a></li>
-          <li class ="button" id="mlazer" data-link="#lazer">Atividades de lazer</li>
+          <li class ="button"id="mproj" data-link="#proj">Projetos Realizados</li>
         </ul>
       </div>
     </div>
@@ -55,19 +55,19 @@
 <!--   -->
 
   <!------------img e texto------------>
-  <div class="divisao">
+  <div id="mgtxt" class="divisao">
     <div class="column">
       <img class="roundimg" src="img/imagem.jpg" alt="Este sou eu">
     </div>
     <div class="column flexcolumn">
       <h1 class="align_center">Sou o João, programador de sistemas informáticos</h1>
-     <div class="align_justify letter"><p id="expprog"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget congue nibh. Curabitur maximus tortor et augue hendrerit bibendum eget ut nulla. Vivamus eget dolor purus. Suspendisse consequat vel nulla nec finibus. Sed dignissim  consectetur lectus, vitae sagittis sapien sagittis non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ultricies enim nec augue dictum ultrices. Pellentesque imperdiet magna massa, mollis imperdiet nisl maximus sed. </p>
+     <div class="align_justify letter"><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget congue nibh. Curabitur maximus tortor et augue hendrerit bibendum eget ut nulla. Vivamus eget dolor purus. Suspendisse consequat vel nulla nec finibus. Sed dignissim  consectetur lectus, vitae sagittis sapien sagittis non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ultricies enim nec augue dictum ultrices. Pellentesque imperdiet magna massa, mollis imperdiet nisl maximus sed. </p>
     </div>
     </div>
   </div>
   <div class="espacov">
-    <div class=" align_center fundo">
-      <h2 id="conhe">Conhecimentos</h2>
+    <div class=" align_center fundo" id="expprog">
+      <h2 id="conhe" >Conhecimentos</h2>
     </div>
   </div>
 
@@ -76,13 +76,13 @@
     <h3 >Experiência de programação:</h3>
   </div>
   <div class="divisao">
-    <div class="column mh">
+    <div class="column">
       <img class="backgroundimg" src="img/Csharp_Logo.png" alt="C#">
       <p class="centroln letter">Ligação de C# a SQLServer</p>
     </div>
-    <div class="column ">
-      <img class="backgroundimg" id="form" src="img/HTML.png" alt="HTML5">
-      <p class="centroln letter">Criação de sites</p>
+    <div class="column" >
+      <img class="backgroundimg" src="img/HTML.png" alt="HTML5">
+      <p class="centroln letter"  id="api">Criação de sites</p>
     </div>
   </div>
 
@@ -94,23 +94,24 @@
     <div class="align_left letter">
       <p>Google maps</p>
       <p>HTML5 boiler plate</p>
-      <p>jQuery</p><div id="proj"></div>
+      <p>jQuery</p>
       <p>Apache cayenne</p>
       <p>Apache commons</p>
     </div>
+    <div id="linguas"></div>
 </div>
 
 
 <!--  Conhecimentos linguisticos -->
 <div class="subtitulo espacov">
-  <h3 id="lazer">Conhecimentos linguísticos:</h3>
+  <h3>Conhecimentos linguísticos:</h3>
 </div>
 <div class="divisao">
   <div class="column textstt letter">
     <p>Português</p>
-  </div><!--
+  </div><br><!--
   --><div class="column textstt letter">
-    <p>Inglês</p><!--
+    <p id="form">Inglês</p><!--
   --></div>
 </div>
 
@@ -122,7 +123,7 @@
 
 <div class="espacov">
     <div class=" align_center fundo">
-      <h2 id="">Estudos e experiências</h2>
+      <h2>Estudos e experiências</h2>
     </div>
   </div>
 
@@ -131,14 +132,11 @@
         <h3 >Formação académica:</h3>
       </div>
       <div class="align_left letter">
-      <p>Escola secundária da Amadora - Av.Alexandre Salles, Nº9, Amadora, Portugal.</p>
-      <p>Setembro de 2019 - ATUAL</p>
+        <p>Escola secundária da Amadora - Av.Alexandre Salles, Nº9, Amadora, Portugal.</p>
+        <p>Setembro de 2019 - ATUAL</p>
+      </div>
     </div>
-    <div>
-      <div id="expprof"></div>
-    </div>
-    </div>
-      <div class="mapouter" data-location="escola secundaria da amadora"></div>
+      <div class="mapouter" id="expprof" data-location="escola secundaria da amadora"></div>
 
     
 
@@ -149,13 +147,13 @@
       <div class="subtitulo">
       <h3>Experiências profissionais:</h3>
     </div>
-    <div class="align_left letter" id="api">
+    <div class="align_left letter">
       <p>Estágio na Baseform</p>
       <p>21 de fevereiro de 2022 - ATUAL</p>
     </div>
       <div class="mapouter" data-location="baseform"></div>
     
-    
+    <div id="proj" ></div>
   
     </div>
 
@@ -168,7 +166,7 @@
     </div>
   </div>
 
-<div class="divisao" id="linguas">
+<div class="divisao">
   <div class="column textstt letter">
     <p> Site de gestão de Stock em C# e ligado a uma base de dados (SQL Server)<br>26 de janeiro de 2022 - 18 de fevereiro de 2022</p>
     <br>
@@ -184,14 +182,14 @@
 <!-- Atividades lazer -->
 <div class="espacov">
     <div class=" align_center fundo">
-      <h2 id="">Lazer</h2>
+      <h2 id="lazer">Lazer</h2>
     </div>
   </div>
 
 <div class=" divisao">
     <div class="column textstt letter">
         <p>Montagem e desmontagem de computadores</p>
-    </div><!--
+    </div><br><!--
     --><div class="column textstt letter">
         <p>Conduzir</p>
     </div>
@@ -222,7 +220,7 @@
       <textarea class="caixa" size=" 100" id="desc" name="desc"></textarea>
       <br><br>
       <input type="submit" value="Enviar">
-      <div class="msg_user">
+      <div style="margin-bottom: 70px;" class="msg_user">
 
       </div>
     </form>

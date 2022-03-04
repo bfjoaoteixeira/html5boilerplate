@@ -90,7 +90,7 @@ body{
 }
 
 .header {
-  height: 45px;
+  height: 56px;
   width: 100%;
 }
 
@@ -107,13 +107,14 @@ body{
 
 .button{
   background-color: #282a34;
-  border-bottom-color: 10px #666699;
+  border-bottom-color: #666699;
   color: #e7e9eb;
-  padding: 15px 32px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   margin-right: 0px;
+  cursor: pointer;
 }
 
 .button:hover{
@@ -139,12 +140,14 @@ background-repeat: no-repeat;
 display: block;
 height: 150px;
 width: 150px;
+padding-bottom: 2px;
 }
 
 
 .fundo{
-  background-color: #9966ff;
+  /*background-color: #9966ff;*/
   width: 100%;
+  background-color: #90f;
 }
 
 .root{
@@ -155,11 +158,6 @@ width: 150px;
   margin: 0;
 }
 
-#osconhe: hover{
-
-
-
-}
 
 
 
@@ -212,6 +210,32 @@ display: flex;
 .mapouter{
   max-width: 600px;
 }
+.textstt{
+  margin-left: 20px;
+}
+
+#mconhe, #mprojs{
+  border-top: 3px;
+  border-top-style: solid;
+  border-color: #e7e9eb;
+}
+.cluster{
+  padding-left: 0px;
+}
+
+#mgtxt{
+  margin-top: 75px;
+}
+
+.caixa{
+  width: 30%;
+}
+
+#mlinguas{
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-color: #e7e9eb ;
+}
 
 
 }
@@ -224,11 +248,6 @@ display: flex;
 
 
 @media only screen and (max-width: 800px) {
-
-/*body{
-  background-color: red;
-}
-*/
 .menu{
   width: 100%;
   top: 0;
@@ -250,26 +269,24 @@ display: flex;
   margin: auto;
 }
 
+
 .button{
-  border-bottom-color: 10px #666699;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
   font-size: 13px;
-  margin-right: 0px;
   padding: 10px;
-  
 }
 .cluster{
   padding: 0px;
 }
-#mconhe{
-  margin-top: 40px;
+#mconhe, #mprojs{
+  margin-top: 39px;
+  border-top: 3px;
+  border-top-style: solid;
+  border-color: #e7e9eb;
 }
 #mconhe .cluster{
   border-top-width: 3px; 
   border-style: solid; 
-  border-color: white;
+  border-color: #e7e9eb;
   border-bottom-width: 0px;
   border-right-width: 0px;
   border-left-width: 0px;
@@ -278,14 +295,8 @@ display: flex;
 #mconhe .button{
   margin-top: 2px;
   margin-right: 0px;
-  margin-bottom: 3px;
+  margin-bottom: 0px;
   padding: 4px 5px 4px 5px;
-}
-
-#mprojs{
-  margin-top: 39px;
-  border-top-style: solid;
-  border-color: white;
 }
 
 #mprojs .button{
@@ -300,6 +311,9 @@ padding: 4px 5px 4px 5px;
   margin-bottom: 2px;
 }
 
+#mgtxt{
+  margin-top: 80px;
+}
 
 .subtitulo{
 text-align: center;
@@ -340,6 +354,21 @@ padding-top: 20px;
 }
 
 }
+
+
+
+@media only screen and (max-width: 425px) {
+
+.menu > .cluster > .button{
+  font-size: 10px;
+}
+
+#mconhe, #mprojs{
+
+margin-top:35px;
+}
+
+
 
 
 
