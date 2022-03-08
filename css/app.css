@@ -6,7 +6,9 @@
 body{
   background-color: #0f1516;
 }
-
+.bodyadmin{
+  background-color: white;
+}
 .body {
   height: 400px;
   
